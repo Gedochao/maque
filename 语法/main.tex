@@ -1,0 +1,64 @@
+\documentclass[12pt]{wzmgr}
+\special{papersize=210mm,297mm}
+% Wersja XeLaTeX
+\usepackage{mathtools}
+\usepackage{CJK}
+\usepackage{xeCJKfntef}
+\usepackage[polish]{babel}
+\usepackage[no-math]{fontspec}
+\usepackage{xeCJK,makeidx}
+\usepackage{setspace,etoolbox,csquotes,indentfirst}
+\usepackage[top=2.5cm,left=2.5cm,right=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{url}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{blindtext}
+\usepackage[inline]{enumitem}
+\usepackage{xcolor}
+\makeatletter
+\g@addto@macro{\UrlBreaks}{\UrlOrds}
+\makeatother
+\setmainfont[Mapping=tex-text]{Adobe Text Pro}
+\setsansfont[Scale=0.88]{IPAexGothic}
+%\setCJKmainfont{AR PL UMing CN}
+%\setCJKsansfont{SimHei}
+%\setCJKmonofont{SimHei}
+%\setCJKmainfont[BoldFont=FandolSong-Bold.otf,ItalicFont=FandolKai-Regular.otf]{FandolSong-Regular.otf}
+\setCJKmainfont[BoldFont={SimHei},ItalicFont={SimHei}]{SimSun}
+% \setmainfont[
+%  BoldFont={Minion Pro Bold}, 
+%  ItalicFont={Minion Pro Italic},
+%  BoldItalicFont={Minion Pro Bold Italic}
+%  ]{Linux Libertine O}
+\setCJKsansfont[BoldFont=FandolHei-Bold.otf]{FandolHei-Regular.otf}
+\setCJKmonofont{FandolFang-Regular.otf}
+\newCJKfontfamily{\ipaexgothic}{IPAexGothic}
+\newCJKfontfamily{\korm}{NanumMyeongjo}
+\newtoggle{brudnopis}\newtoggle{prowincjepy}
+\togglefalse{brudnopis} % change \toggletrue to \togglefalse to disable comments
+\toggletrue{prowincjepy}
+\newcommand{\prowincja}[1]{\iftoggle{prowincjepy}{ (#1)}{}}
+\newcommand{\Korean}{\korm\CJKspace}
+\newcommand{\toponim}[1]{\textsf{#1}}
+\newcommand{\nazwisko}[1]{#1}
+\newcommand{\pinyin}[1]{\textit{#1}}
+\newcommand{\fnm}{\footnotemark}
+\newcommand{\komentarz}[1]{\iftoggle{brudnopis}{\colorbox{Red}{#1}}}
+\newcommand{\boldzh}[1]{\CJKunderdot{\textbf{#1}}}
+\author{Ged}
+\title{Gramatyka opisowa - opracowanie do egzaminu}
+\nrwersji{0.0}
+\miejsce{Poznań}
+%\hyphenation{ La\.n-kā-va-tā-ra}
+\makeindex
+\begin{document}
+\onehalfspacing
+\maketitle
+\input{spojniki}
+\input{partykuly}
+\input{onomatopeje}
+\input{zdanie_czesci}
+\input{przydawka_i_okolicznik}
+\input{komplementy}
+\input{zdanie_proste}
+\printindex
+\end{document}

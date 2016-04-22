@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>语法</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>net.sourceforge.texlipse.builder.TexlipseBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>net.sourceforge.texlipse.builder.TexlipseNature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>.tex</name>
+			<type>1</type>
+			<location>/usr/share/texlive/texmf-dist/tex/latex/tools/.tex</location>
+		</link>
+		<link>
+			<name>makeidx.sty</name>
+			<type>1</type>
+			<location>/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty</location>
+		</link>
+		<link>
+			<name>prelim2e.sty</name>
+			<type>1</type>
+			<location>/usr/share/texlive/texmf-dist/tex/latex/ms/prelim2e.sty</location>
+		</link>
+		<link>
+			<name>tgpagella.sty</name>
+			<type>1</type>
+			<location>/usr/share/texlive/texmf-dist/tex/latex/tex-gyre/tgpagella.sty</location>
+		</link>
+	</linkedResources>
+</projectDescription>
