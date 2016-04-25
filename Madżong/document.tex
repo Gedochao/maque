@@ -1,4 +1,4 @@
-\documentclass[12pt]{wzmgr}
+\documentclass[hidelinks,12pt]{wzmgr}
 \special{papersize=210mm,297mm}
 % Wersja XeLaTeX
 \usepackage{mathtools}
@@ -14,6 +14,9 @@
 \usepackage{xcolor}
 \usepackage{graphicx}
 \graphicspath{ {images/} }
+%\usepackage[hidelinks]{hyperref}
+
+
 \makeatletter
 \g@addto@macro{\UrlBreaks}{\UrlOrds}
 \makeatother
@@ -48,10 +51,10 @@
 \begin{document}
 \onehalfspacing
 \maketitle
-\input{introduction}
+%\input{introduction}
 \input{chapter_one}
-\input{chapter_two}
-\input{chapter_three}
+%\input{chapter_two}
+%\input{chapter_three}
 \printindex
 \include{bibliography}
 \end{document}
