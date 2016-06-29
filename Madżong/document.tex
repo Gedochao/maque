@@ -35,8 +35,19 @@
 \newcommand{\toponim}[1]{\textsf{#1}}
 \newcommand{\nazwisko}[1]{#1}
 \newcommand{\pinyin}[1]{\textit{#1}}
+\newcommand{\romaji}[1]{\textit{#1}}
 \newcommand{\fnm}{\footnotemark}
 \newcommand{\komentarz}[1]{\iftoggle{brudnopis}{\colorbox{Red}{#1}}}
+
+%morozowy stuff do cytowania
+%\newcommand{\defspacing}{\spacing{1.32}}
+%\newcommand{\quotespacing}{\spacing{1.1}}
+%\newcommand{\longquote}[1]{\quotespacing\blockquote{\itshape #1}\defspacing}
+
+%moja obsluga cytowania
+%\usepackage{quotchap}
+\usepackage{epigraph}
+
 \author{Piotr Chabelski}
 \title{Madżong}
 \nralbumu{XXXXX}
@@ -50,10 +61,10 @@
 \makeindex
 \begin{document}
 \onehalfspacing
-%\maketitle
-%\input{introduction}
+\maketitle
+\input{introduction}
 \input{chapter_one}
-%\input{chapter_two}
+\input{chapter_two}
 %\input{chapter_three}
 \printindex
 \include{bibliography}
