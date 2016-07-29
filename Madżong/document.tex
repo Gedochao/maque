@@ -14,6 +14,12 @@
 \usepackage{xcolor}
 \usepackage{graphicx}
 \graphicspath{ {images/} }
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{longtable}
+%\usepackage{ltablex}
 %\usepackage[hidelinks]{hyperref}
 
 
@@ -34,10 +40,41 @@
 \newcommand{\Korean}{\korm\CJKspace}
 \newcommand{\toponim}[1]{\textsf{#1}}
 \newcommand{\nazwisko}[1]{#1}
-\newcommand{\pinyin}[1]{\textit{#1}}
-\newcommand{\romaji}[1]{\textit{#1}}
+\newcommand{\pinyin}[1]{\mbox{\textit{#1}}}
+\newcommand{\romaji}[1]{\mbox{\textit{#1}}}
 \newcommand{\fnm}{\footnotemark}
 \newcommand{\komentarz}[1]{\iftoggle{brudnopis}{\colorbox{Red}{#1}}}
+
+%terminy
+\newcommand{\terminprosty}[1]{\textbf{#1}}
+\newcommand{\termin}[3]{\terminprosty{#1} (#2 \pinyin{#3}) --}
+\newcommand{\terminpodwojny}[6]{\terminprosty{#1} (#2 \pinyin{#3}) lub
+\terminprosty{#4} (#5 \pinyin{#6}) --}
+\newcommand{\terminprostyzpodwojnym}[7]{\terminprosty{#1}:
+
+\terminpodwojny{#2}{#3}{#4}{#5}{#6}{#7}}
+\newcommand{\termindwapinyiny}[5]{\terminprosty{#1} (#2 \pinyin{#3} lub #4
+\pinyin{#5}) --}
+
+%deklaracje i misc czeste terminy
+\newcommand{\wiatry}{wschodni, południowy, zachodni lub północny}
+\newcommand{\smoki}{czerwony, zielony lub biały}
+\newcommand{\hu}{\pinyin{hu} }
+\newcommand{\huend}{\pinyin{hu}}
+\newcommand{\hua}{\pinyin{hua}}
+\newcommand{\peng}{\pinyin{peng}}
+\newcommand{\gang}{\pinyin{gang}}
+\newcommand{\dekchi}{\pinyin{chi}}
+
+%deklaracje
+\newcommand{\deklaracja}[1]{\pinyin{#1} -- }
+
+%fan
+\newcommand{\fan}[3]{%
+  \begin{tabular}[x]{@{}c@{}}#1\\#2\\\pinyin{#3}\end{tabular}}
+\newcommand{\tabsplit}[2]{%
+  \begin{tabular}[x]{@{}c@{}}#1\\#2\end{tabular}}
+
 
 %morozowy stuff do cytowania
 %\newcommand{\defspacing}{\spacing{1.32}}
@@ -68,4 +105,5 @@
 %\input{chapter_three}
 \printindex
 \include{bibliography}
+\include{fan_table}
 \end{document}
