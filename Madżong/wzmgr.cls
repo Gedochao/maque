@@ -316,6 +316,11 @@
    \chapter*{\IntroName\@mkboth{\IntroName}{\IntroName}}%
 \addcontentsline{toc}{chapter}{\IntroName}}
 %
+\newcommand{\MahjongDefinitionName}{Definicja madżonga przyjęta na potrzeby
+niniejszej pracy} \newcommand{\mahjongdef}{%\doublepage
+   \chapter*{\MahjongDefinitionName}%
+\addcontentsline{toc}{chapter}{\MahjongDefinitionName}}
+%
 \newcommand{\summary}{%\doublepage
    \chapter*{\SummaryName\@mkboth{\SummaryName}{\SummaryName}}%
 \addcontentsline{toc}{chapter}{\SummaryName}}
