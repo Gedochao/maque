@@ -1,7 +1,10 @@
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % DEFINICJA OBOWIĄZUJĄCA W PRACY
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\mahjongdef
+%\mahjongdef % oddzielna sekcja w spisie treści (,,drugi wstęp'')
+\def \traditionalstonesfootnote {\getrefnumber{definicja_tradycyjne}} %zmienna do referencji
+% przypisu przy kamieniach zapisanych w znakach tradycyjnych
+\subsection{Definicja przyjęta na potrzeby niniejszej pracy}
 \label{definicja}
 Madżong to gra spełniająca %definicję opisaną w sekcji 1.1.1 niniejszej pracy
 % oraz
@@ -27,21 +30,27 @@ wartościach od 1 do 9; dopuszczalna jest także talia rang zamiast talii liczby
 (oznaczana przez znaki 卐 (\pinyin{wàn}, dla kamienia o wartości 1) oraz 品 
 (\pinyin{pǐn}, dla kamieni o wartościach od 2 do 9)); 
 \item 4 wiatry \label{wiatry}
-(wschód(東\footnote{\label{definicja_tradycyjne}Znaki wyjątkowo zapisane w formie tradycyjnej, jako że w takiej występują na kamieniach. Dla znaku 東  forma
-uproszczona to 东, dla 將 jest to 将, dla 發 -- 发, dla 龍 -- 龙, a dla 鳳 -- 凤.} 
+(wschód(東\footnote{\label{definicja_tradycyjne}Znaki wyjątkowo zapisane w formie
+tradycyjnej, jako że w takiej występują na kamieniach. Dla znaku 東  forma
+uproszczona to 东, dla 將 jest to 将, dla 發 -- 发, dla 龍 -- 龙, a dla 鳳 -- 凤.}
 \pinyin{dōng}), południe (南 \pinyin{nán}), zachód (西 \pinyin{xī}) i północ (北
 \pinyin{běi}));  dopuszczalny jest także wariant, w którym zamiast 4 wiatrów
 występuje 4 możnych (diuk (公 \pinyin{gōng}),  markiz (侯 \pinyin{hóu}),  generał
-(將\footnotemark[2] \pinyin{jiàng}) oraz minister (相 \pinyin{xiàng}));
-	  \item 3 smoki (biały (白 \pinyin{bái}), zielony (發\footnotemark[2]
-	  \pinyin{fā}) i czerwony (中 \pinyin{zhòng})); dopuszczalny jest także wariant,
-	  w którym zamiast smoka zielonego jest smok bez przydzielonej mu
-	  barwy\footnote{,,3 Smoki'' w kolorach białym, zielonym i czerwonym to
-	  zasadniczo termin zachodni, nie chiński.
+(將\footnotemark[\traditionalstonesfootnote] \pinyin{jiàng}) oraz minister (相
+\pinyin{xiàng}));
+	  \item 3 smoki (biały (白 \pinyin{bái}), zielony
+	  (發\footnotemark[\traditionalstonesfootnote] \pinyin{fā}) i czerwony (中
+	  \pinyin{zhòng})); dopuszczalny jest także wariant, w którym zamiast smoka
+	  zielonego jest smok bez przydzielonej mu barwy\footnote{,,3 Smoki'' w
+	  kolorach białym, zielonym i czerwonym to zasadniczo termin zachodni, nie
+	  chiński.
 	  Chińczycy używają określenia ,,3 \pinyin{yuan}'' (三元牌 \pinyin{sān yuán
 	  pái}). We wczesnych zestawach do gry w madżonga występował jednakże
-	  kamień oznaczany znakiem smoka -- 龍\footnotemark[2].} (龍\footnotemark[2]
-	  \pinyin{lóng}), a zamiast smoka czerwonego -- feniks (鳳\footnotemark[2] \pinyin{fèng});
+	  kamień oznaczany znakiem smoka --
+	  龍\footnotemark[\traditionalstonesfootnote].}
+	  (龍\footnotemark[\traditionalstonesfootnote] \pinyin{lóng}), a zamiast smoka
+	  czerwonego -- feniks
+	  (鳳\footnotemark[\traditionalstonesfootnote]\pinyin{fèng});
 	  \item opcjonalnie kwiaty i/lub pory roku w różnej ilości;
 	  \item opcjonalnie dżoker lub inne kamienie specjalne.
 	\end{itemize}
