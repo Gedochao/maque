@@ -320,6 +320,14 @@
 niniejszej pracy} \newcommand{\mahjongdef}{%\doublepage
    \chapter*{\MahjongDefinitionName}%
 \addcontentsline{toc}{chapter}{\MahjongDefinitionName}}
+
+\newcommand{\Suplement}{Suplement} \newcommand{\suplement}{%\doublepage
+   \chapter*{\Suplement}%
+\addcontentsline{toc}{chapter}{\Suplement}}
+
+\newcommand{\Biblio}{Bibliografia} \newcommand{\biblio}{%\doublepage
+   \chapter*{\Biblio}%
+\addcontentsline{toc}{chapter}{\Biblio}}
 %
 \newcommand{\summary}{%\doublepage
    \chapter*{\SummaryName\@mkboth{\SummaryName}{\SummaryName}}%
