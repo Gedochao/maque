@@ -165,6 +165,8 @@
      \vspace{8mm plus 1mm minus 2mm}
     \begin{center}%
       {\huge\textbf{\@title}\par}
+      \vspace{0.25cm plus 0.75fill}
+      {\huge\textbf{\@engtitle}\par}
       \vspace{2cm plus 1.5fill}
       \begin{flushright}\large
         \begin{tabular}{l}
@@ -202,6 +204,8 @@
    \@keywords
   \fi
   \cleardoublepage %%
+  \input{declaration}
+  \cleardoublepage
   \tableofcontents
   %\listoftables
   %\listoffigures
@@ -215,6 +219,8 @@
 \def\@opiekun{???\ClassError{wzmgr}{Brak danych opiekuna pracy}\@ehc}
 \def\miejsce#1{\gdef\@miejsce{#1}}
 \def\@miejsce{Sopot}
+\def\engtitle#1{\gdef\@engtitle{#1}}
+\def\@engtitle{English Title}
 %
 \def\keywords#1{\gdef\@keywords{#1}}
 % slowa kluczowe sa opcjonalne:
